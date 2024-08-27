@@ -11,11 +11,11 @@
 #include "pins_arduino.h"
 
 #define SCROLL_ADDR            0x40
-#define SCROLL_REG             0x10
+#define ENCODER_REG             0x10
 #define BUTTON_REG             0x20
 #define RGB_LED_REG            0x30
 #define RESET_REG              0x40
-#define INC_SCROLL_REG         0x50
+#define INC_ENCODER_REG         0x50
 #define BOOTLOADER_VERSION_REG 0xFC
 #define JUMP_TO_BOOTLOADER_REG 0xFD
 #define FIRMWARE_VERSION_REG   0xFE
