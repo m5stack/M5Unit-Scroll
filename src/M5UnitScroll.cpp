@@ -64,12 +64,12 @@ int32_t M5UnitScroll::getIncEncoderValue(void) {
     return value;
 }
 
-/*! @brief Get the current status of the rotary encoder keys.
-    @return 1 if the set was press, otherwise 0.. */
+/*! @brief Get the current status of the rotary encoder button.
+    @return true if the button was pressed, otherwise false. */
 bool M5UnitScroll::getButtonStatus(void) {
     uint8_t data;
     readBytes(_addr, BUTTON_REG, &data, 1);
-    return data;
+    return data == 0x00;
 }
 
 /*! @brief Set the color of the LED (HEX). */
